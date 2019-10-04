@@ -90,6 +90,7 @@
             this.CEButton.TabIndex = 0;
             this.CEButton.Text = "CE";
             this.CEButton.UseVisualStyleBackColor = false;
+            this.CEButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // TwoButton
             // 
@@ -155,6 +156,7 @@
             this.DeleteButton.TabIndex = 0;
             this.DeleteButton.Text = "<";
             this.DeleteButton.UseVisualStyleBackColor = false;
+            this.DeleteButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // CButton
             // 
@@ -166,8 +168,10 @@
             this.CButton.Name = "CButton";
             this.CButton.Size = new System.Drawing.Size(100, 100);
             this.CButton.TabIndex = 0;
+            this.CButton.Tag = "ClearAll";
             this.CButton.Text = "C";
             this.CButton.UseVisualStyleBackColor = false;
+            this.CButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // EightButton
             // 
@@ -235,6 +239,7 @@
             this.DivisionButton.TabIndex = 0;
             this.DivisionButton.Text = "/";
             this.DivisionButton.UseVisualStyleBackColor = false;
+            this.DivisionButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // MultiplyButton
             // 
@@ -248,6 +253,7 @@
             this.MultiplyButton.TabIndex = 0;
             this.MultiplyButton.Text = "x";
             this.MultiplyButton.UseVisualStyleBackColor = false;
+            this.MultiplyButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // SubtractionButton
             // 
@@ -261,6 +267,7 @@
             this.SubtractionButton.TabIndex = 0;
             this.SubtractionButton.Text = "-";
             this.SubtractionButton.UseVisualStyleBackColor = false;
+            this.SubtractionButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // PlusButton
             // 
@@ -274,6 +281,7 @@
             this.PlusButton.TabIndex = 0;
             this.PlusButton.Text = "+";
             this.PlusButton.UseVisualStyleBackColor = false;
+            this.PlusButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // DotButton
             // 
@@ -287,6 +295,7 @@
             this.DotButton.TabIndex = 0;
             this.DotButton.Text = ",";
             this.DotButton.UseVisualStyleBackColor = false;
+            this.DotButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // MatchButton
             // 
@@ -300,6 +309,7 @@
             this.MatchButton.TabIndex = 0;
             this.MatchButton.Text = "=";
             this.MatchButton.UseVisualStyleBackColor = false;
+            this.MatchButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // button1
             // 
@@ -313,6 +323,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "+/-";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // NumberInput
             // 
