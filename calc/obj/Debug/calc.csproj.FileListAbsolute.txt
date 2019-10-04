@@ -1,0 +1,10 @@
+C:\Users\Ken\Desktop\calc\calc\bin\Debug\calc.exe.config
+C:\Users\Ken\Desktop\calc\calc\bin\Debug\calc.exe
+C:\Users\Ken\Desktop\calc\calc\bin\Debug\calc.pdb
+C:\Users\Ken\Desktop\calc\calc\obj\Debug\calc.csprojAssemblyReference.cache
+C:\Users\Ken\Desktop\calc\calc\obj\Debug\calc.MainForm.resources
+C:\Users\Ken\Desktop\calc\calc\obj\Debug\calc.Properties.Resources.resources
+C:\Users\Ken\Desktop\calc\calc\obj\Debug\calc.csproj.GenerateResource.cache
+C:\Users\Ken\Desktop\calc\calc\obj\Debug\calc.csproj.CoreCompileInputs.cache
+C:\Users\Ken\Desktop\calc\calc\obj\Debug\calc.exe
+C:\Users\Ken\Desktop\calc\calc\obj\Debug\calc.pdb
