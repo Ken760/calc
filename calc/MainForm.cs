@@ -12,8 +12,8 @@ namespace calc
 {
     public partial class MainForm : Form
     {
-        int value1 = 0,
-            value2;
+        double value1 = 0,
+               value2;
 
         public MainForm()
         {
@@ -22,9 +22,6 @@ namespace calc
             NumberInput.Text = value1.ToString();
         }
 
-        /// <summary>
-        /// Обработчик нажатия клавиши цифры.
-        /// </summary>
         private void HandleNumberButton_Click(object sender, EventArgs e)
         {
             Button currentButton = (Button)sender;
@@ -32,9 +29,6 @@ namespace calc
             addNumber(numberValue);
         }
 
-        /// <summary>
-        /// Обработчик нажатия клавиши действия.
-        /// </summary>
         private void HandleActionButton_Click(object sender, EventArgs e)
         {
             Button currentButton = (Button)sender;
@@ -47,8 +41,28 @@ namespace calc
             string buttonType = currentButton.Tag.ToString();
 
             switch(buttonType)
-            {
-                case "ClearAll": // Очистить все.
+            {            
+                case "Plus":
+                {
+                    setSum();
+                    break;
+                }
+                case "Match":
+                {
+                    setResult();
+                    break;
+                }
+                case "DeleteNumber":
+                {
+                    deleteNumber();
+                    break;
+                }
+                case "SignChange":
+                {
+                    signChange();
+                    break;
+                }
+                case "ClearAll":
                 {
                     clearAll();
                     break;
@@ -56,9 +70,28 @@ namespace calc
             }
         }
 
-        /// <summary>
-        /// Добавляет цифру в поле и память. (Не сделано добавление в память)
-        /// </summary>
+        private void setResult()
+        {
+            if (value2 == 0)
+            {
+                value2 = Convert.ToInt32(NumberInput.Text);
+
+                double result = value1 + value2;
+                NumberInput.Text = result.ToString();
+
+                clearValues();
+            }
+        }
+
+        private void setSum()
+        {
+            if (value2 == 0)
+            {
+                value1 = Convert.ToInt32(NumberInput.Text);
+                NumberInput.Text = value2.ToString();
+            }
+        }
+
         private void addNumber(string numberValue)
         {
             if (NumberInput.Text == 0.ToString())
@@ -68,13 +101,42 @@ namespace calc
             else
             {
                 NumberInput.Text += numberValue;
+            }       
+        }
+
+        private void deleteNumber()
+        {
+            string newValue = NumberInput.Text.Substring(0, NumberInput.Text.Length - 1);
+            if (newValue == String.Empty)
+            {
+                NumberInput.Text = 0.ToString();
             }
+            else
+            {
+                NumberInput.Text = newValue;
+            }
+        }
+
+        private void signChange()
+        {
+            int newValue = Convert.ToInt32(NumberInput.Text) * -1;
+            NumberInput.Text = newValue.ToString();
         }
 
         private void clearAll()
         {
+            clearValues();
+            clearInput();
+        }
+
+        private void clearValues()
+        {
             value1 = 0;
             value2 = 0;
+        }
+
+        private void clearInput()
+        {
             NumberInput.Text = value1.ToString();
         }
     }

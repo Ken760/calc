@@ -35,7 +35,7 @@
             this.NullButton = new System.Windows.Forms.Button();
             this.OneButton = new System.Windows.Forms.Button();
             this.ThreeButton = new System.Windows.Forms.Button();
-            this.DeleteButton = new System.Windows.Forms.Button();
+            this.DeleteNumberButton = new System.Windows.Forms.Button();
             this.CButton = new System.Windows.Forms.Button();
             this.EightButton = new System.Windows.Forms.Button();
             this.FiveButton = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@
             this.PlusButton = new System.Windows.Forms.Button();
             this.DotButton = new System.Windows.Forms.Button();
             this.MatchButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SignChangeButton = new System.Windows.Forms.Button();
             this.NumberInput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -144,19 +144,20 @@
             this.ThreeButton.UseVisualStyleBackColor = true;
             this.ThreeButton.Click += new System.EventHandler(this.HandleNumberButton_Click);
             // 
-            // DeleteButton
+            // DeleteNumberButton
             // 
-            this.DeleteButton.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.DeleteButton.FlatAppearance.BorderSize = 0;
-            this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DeleteButton.Location = new System.Drawing.Point(224, 123);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(100, 100);
-            this.DeleteButton.TabIndex = 0;
-            this.DeleteButton.Text = "<";
-            this.DeleteButton.UseVisualStyleBackColor = false;
-            this.DeleteButton.Click += new System.EventHandler(this.HandleActionButton_Click);
+            this.DeleteNumberButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.DeleteNumberButton.FlatAppearance.BorderSize = 0;
+            this.DeleteNumberButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteNumberButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DeleteNumberButton.Location = new System.Drawing.Point(224, 123);
+            this.DeleteNumberButton.Name = "DeleteNumberButton";
+            this.DeleteNumberButton.Size = new System.Drawing.Size(100, 100);
+            this.DeleteNumberButton.TabIndex = 0;
+            this.DeleteNumberButton.Tag = "DeleteNumber";
+            this.DeleteNumberButton.Text = "<";
+            this.DeleteNumberButton.UseVisualStyleBackColor = false;
+            this.DeleteNumberButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // CButton
             // 
@@ -279,6 +280,7 @@
             this.PlusButton.Name = "PlusButton";
             this.PlusButton.Size = new System.Drawing.Size(100, 100);
             this.PlusButton.TabIndex = 0;
+            this.PlusButton.Tag = "Plus";
             this.PlusButton.Text = "+";
             this.PlusButton.UseVisualStyleBackColor = false;
             this.PlusButton.Click += new System.EventHandler(this.HandleActionButton_Click);
@@ -307,23 +309,25 @@
             this.MatchButton.Name = "MatchButton";
             this.MatchButton.Size = new System.Drawing.Size(100, 100);
             this.MatchButton.TabIndex = 0;
+            this.MatchButton.Tag = "Match";
             this.MatchButton.Text = "=";
             this.MatchButton.UseVisualStyleBackColor = false;
             this.MatchButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
-            // button1
+            // SignChangeButton
             // 
-            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(12, 547);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 100);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "+/-";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.HandleActionButton_Click);
+            this.SignChangeButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SignChangeButton.FlatAppearance.BorderSize = 0;
+            this.SignChangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignChangeButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SignChangeButton.Location = new System.Drawing.Point(12, 547);
+            this.SignChangeButton.Name = "SignChangeButton";
+            this.SignChangeButton.Size = new System.Drawing.Size(100, 100);
+            this.SignChangeButton.TabIndex = 0;
+            this.SignChangeButton.Tag = "SignChange";
+            this.SignChangeButton.Text = "+/-";
+            this.SignChangeButton.UseVisualStyleBackColor = false;
+            this.SignChangeButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // NumberInput
             // 
@@ -331,13 +335,13 @@
             this.NumberInput.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NumberInput.Location = new System.Drawing.Point(12, 35);
             this.NumberInput.Name = "NumberInput";
-            this.NumberInput.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.NumberInput.Size = new System.Drawing.Size(418, 54);
+            this.NumberInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.NumberInput.Size = new System.Drawing.Size(418, 43);
             this.NumberInput.TabIndex = 1;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(447, 653);
@@ -351,11 +355,11 @@
             this.Controls.Add(this.SubtractionButton);
             this.Controls.Add(this.MultiplyButton);
             this.Controls.Add(this.DivisionButton);
-            this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.DeleteNumberButton);
             this.Controls.Add(this.CEButton);
             this.Controls.Add(this.SevenButton);
             this.Controls.Add(this.FourButton);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SignChangeButton);
             this.Controls.Add(this.NullButton);
             this.Controls.Add(this.SixButton);
             this.Controls.Add(this.ThreeButton);
@@ -381,7 +385,7 @@
         private System.Windows.Forms.Button NullButton;
         private System.Windows.Forms.Button OneButton;
         private System.Windows.Forms.Button ThreeButton;
-        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button DeleteNumberButton;
         private System.Windows.Forms.Button CButton;
         private System.Windows.Forms.Button EightButton;
         private System.Windows.Forms.Button FiveButton;
@@ -393,7 +397,7 @@
         private System.Windows.Forms.Button PlusButton;
         private System.Windows.Forms.Button DotButton;
         private System.Windows.Forms.Button MatchButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SignChangeButton;
         private System.Windows.Forms.TextBox NumberInput;
     }
 }
