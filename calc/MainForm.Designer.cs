@@ -45,7 +45,7 @@
             this.MultiplyButton = new System.Windows.Forms.Button();
             this.SubtractionButton = new System.Windows.Forms.Button();
             this.PlusButton = new System.Windows.Forms.Button();
-            this.DotButton = new System.Windows.Forms.Button();
+            this.CommaButton = new System.Windows.Forms.Button();
             this.MatchButton = new System.Windows.Forms.Button();
             this.SignChangeButton = new System.Windows.Forms.Button();
             this.NumberInput = new System.Windows.Forms.TextBox();
@@ -54,6 +54,8 @@
             // FourButton
             // 
             this.FourButton.FlatAppearance.BorderSize = 0;
+            this.FourButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.FourButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.FourButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FourButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FourButton.Location = new System.Drawing.Point(12, 335);
@@ -68,6 +70,8 @@
             // 
             this.SevenButton.BackColor = System.Drawing.Color.White;
             this.SevenButton.FlatAppearance.BorderSize = 0;
+            this.SevenButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.SevenButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.SevenButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SevenButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SevenButton.Location = new System.Drawing.Point(12, 229);
@@ -82,12 +86,15 @@
             // 
             this.CEButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CEButton.FlatAppearance.BorderSize = 0;
+            this.CEButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.CEButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.CEButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CEButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CEButton.Location = new System.Drawing.Point(12, 123);
             this.CEButton.Name = "CEButton";
             this.CEButton.Size = new System.Drawing.Size(100, 100);
             this.CEButton.TabIndex = 0;
+            this.CEButton.Tag = "Clear";
             this.CEButton.Text = "CE";
             this.CEButton.UseVisualStyleBackColor = false;
             this.CEButton.Click += new System.EventHandler(this.HandleActionButton_Click);
@@ -95,6 +102,8 @@
             // TwoButton
             // 
             this.TwoButton.FlatAppearance.BorderSize = 0;
+            this.TwoButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.TwoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.TwoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TwoButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TwoButton.Location = new System.Drawing.Point(118, 441);
@@ -108,6 +117,8 @@
             // NullButton
             // 
             this.NullButton.FlatAppearance.BorderSize = 0;
+            this.NullButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.NullButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.NullButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NullButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NullButton.Location = new System.Drawing.Point(118, 547);
@@ -121,6 +132,8 @@
             // OneButton
             // 
             this.OneButton.FlatAppearance.BorderSize = 0;
+            this.OneButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.OneButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.OneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OneButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.OneButton.Location = new System.Drawing.Point(12, 441);
@@ -134,6 +147,8 @@
             // ThreeButton
             // 
             this.ThreeButton.FlatAppearance.BorderSize = 0;
+            this.ThreeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.ThreeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.ThreeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ThreeButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ThreeButton.Location = new System.Drawing.Point(224, 441);
@@ -148,6 +163,8 @@
             // 
             this.DeleteNumberButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.DeleteNumberButton.FlatAppearance.BorderSize = 0;
+            this.DeleteNumberButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.DeleteNumberButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.DeleteNumberButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteNumberButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DeleteNumberButton.Location = new System.Drawing.Point(224, 123);
@@ -163,6 +180,8 @@
             // 
             this.CButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CButton.FlatAppearance.BorderSize = 0;
+            this.CButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.CButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.CButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CButton.Location = new System.Drawing.Point(118, 123);
@@ -178,6 +197,8 @@
             // 
             this.EightButton.BackColor = System.Drawing.Color.White;
             this.EightButton.FlatAppearance.BorderSize = 0;
+            this.EightButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.EightButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.EightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EightButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EightButton.Location = new System.Drawing.Point(118, 229);
@@ -191,6 +212,8 @@
             // FiveButton
             // 
             this.FiveButton.FlatAppearance.BorderSize = 0;
+            this.FiveButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.FiveButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.FiveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FiveButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FiveButton.Location = new System.Drawing.Point(118, 335);
@@ -204,6 +227,8 @@
             // SixButton
             // 
             this.SixButton.FlatAppearance.BorderSize = 0;
+            this.SixButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.SixButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.SixButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SixButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SixButton.Location = new System.Drawing.Point(224, 335);
@@ -218,6 +243,8 @@
             // 
             this.NineButton.BackColor = System.Drawing.Color.White;
             this.NineButton.FlatAppearance.BorderSize = 0;
+            this.NineButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.NineButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.NineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NineButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NineButton.Location = new System.Drawing.Point(224, 229);
@@ -232,12 +259,15 @@
             // 
             this.DivisionButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.DivisionButton.FlatAppearance.BorderSize = 0;
+            this.DivisionButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.DivisionButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.DivisionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DivisionButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DivisionButton.Location = new System.Drawing.Point(330, 123);
             this.DivisionButton.Name = "DivisionButton";
             this.DivisionButton.Size = new System.Drawing.Size(100, 100);
             this.DivisionButton.TabIndex = 0;
+            this.DivisionButton.Tag = "Division";
             this.DivisionButton.Text = "/";
             this.DivisionButton.UseVisualStyleBackColor = false;
             this.DivisionButton.Click += new System.EventHandler(this.HandleActionButton_Click);
@@ -246,12 +276,15 @@
             // 
             this.MultiplyButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MultiplyButton.FlatAppearance.BorderSize = 0;
+            this.MultiplyButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.MultiplyButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.MultiplyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MultiplyButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MultiplyButton.Location = new System.Drawing.Point(330, 229);
             this.MultiplyButton.Name = "MultiplyButton";
             this.MultiplyButton.Size = new System.Drawing.Size(100, 100);
             this.MultiplyButton.TabIndex = 0;
+            this.MultiplyButton.Tag = "Multi";
             this.MultiplyButton.Text = "x";
             this.MultiplyButton.UseVisualStyleBackColor = false;
             this.MultiplyButton.Click += new System.EventHandler(this.HandleActionButton_Click);
@@ -260,12 +293,15 @@
             // 
             this.SubtractionButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SubtractionButton.FlatAppearance.BorderSize = 0;
+            this.SubtractionButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.SubtractionButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.SubtractionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubtractionButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SubtractionButton.Location = new System.Drawing.Point(330, 335);
             this.SubtractionButton.Name = "SubtractionButton";
             this.SubtractionButton.Size = new System.Drawing.Size(100, 100);
             this.SubtractionButton.TabIndex = 0;
+            this.SubtractionButton.Tag = "Minus";
             this.SubtractionButton.Text = "-";
             this.SubtractionButton.UseVisualStyleBackColor = false;
             this.SubtractionButton.Click += new System.EventHandler(this.HandleActionButton_Click);
@@ -274,6 +310,8 @@
             // 
             this.PlusButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PlusButton.FlatAppearance.BorderSize = 0;
+            this.PlusButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.PlusButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.PlusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlusButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PlusButton.Location = new System.Drawing.Point(330, 441);
@@ -285,24 +323,29 @@
             this.PlusButton.UseVisualStyleBackColor = false;
             this.PlusButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
-            // DotButton
+            // CommaButton
             // 
-            this.DotButton.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.DotButton.FlatAppearance.BorderSize = 0;
-            this.DotButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DotButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DotButton.Location = new System.Drawing.Point(224, 547);
-            this.DotButton.Name = "DotButton";
-            this.DotButton.Size = new System.Drawing.Size(100, 100);
-            this.DotButton.TabIndex = 0;
-            this.DotButton.Text = ",";
-            this.DotButton.UseVisualStyleBackColor = false;
-            this.DotButton.Click += new System.EventHandler(this.HandleActionButton_Click);
+            this.CommaButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CommaButton.FlatAppearance.BorderSize = 0;
+            this.CommaButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.CommaButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.CommaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CommaButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CommaButton.Location = new System.Drawing.Point(224, 547);
+            this.CommaButton.Name = "CommaButton";
+            this.CommaButton.Size = new System.Drawing.Size(100, 100);
+            this.CommaButton.TabIndex = 0;
+            this.CommaButton.Tag = "Comma";
+            this.CommaButton.Text = ",";
+            this.CommaButton.UseVisualStyleBackColor = false;
+            this.CommaButton.Click += new System.EventHandler(this.HandleActionButton_Click);
             // 
             // MatchButton
             // 
             this.MatchButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MatchButton.FlatAppearance.BorderSize = 0;
+            this.MatchButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.MatchButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.MatchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MatchButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MatchButton.Location = new System.Drawing.Point(330, 547);
@@ -318,6 +361,8 @@
             // 
             this.SignChangeButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SignChangeButton.FlatAppearance.BorderSize = 0;
+            this.SignChangeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.SignChangeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.SignChangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignChangeButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SignChangeButton.Location = new System.Drawing.Point(12, 547);
@@ -338,6 +383,7 @@
             this.NumberInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.NumberInput.Size = new System.Drawing.Size(418, 43);
             this.NumberInput.TabIndex = 1;
+            this.NumberInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // MainForm
             // 
@@ -349,7 +395,7 @@
             this.Controls.Add(this.NineButton);
             this.Controls.Add(this.EightButton);
             this.Controls.Add(this.CButton);
-            this.Controls.Add(this.DotButton);
+            this.Controls.Add(this.CommaButton);
             this.Controls.Add(this.MatchButton);
             this.Controls.Add(this.PlusButton);
             this.Controls.Add(this.SubtractionButton);
@@ -395,7 +441,7 @@
         private System.Windows.Forms.Button MultiplyButton;
         private System.Windows.Forms.Button SubtractionButton;
         private System.Windows.Forms.Button PlusButton;
-        private System.Windows.Forms.Button DotButton;
+        private System.Windows.Forms.Button CommaButton;
         private System.Windows.Forms.Button MatchButton;
         private System.Windows.Forms.Button SignChangeButton;
         private System.Windows.Forms.TextBox NumberInput;
