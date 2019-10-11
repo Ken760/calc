@@ -40,7 +40,14 @@ namespace calc
         {
             Button currentButton = (Button)sender;
             string numberValue = currentButton.Text;
-            addNumber(numberValue);
+            if (NumberInput.Text.Length < 20)
+            {
+                addNumber(numberValue);
+            }
+             else
+            {
+                MessageBox.Show("Невозможно добавить еще цифру");
+            }
         }
 
         /// <summary>
@@ -158,6 +165,14 @@ namespace calc
                     }
                     case Action.Division:
                     {
+                       if ( value2 == 0 )
+                            {
+                                MessageBox.Show("Делить на ноль нельзя");
+                                clearValues();
+                                
+
+                            }
+             
                         result = value1 / value2;
                         break;
                     }
@@ -165,6 +180,8 @@ namespace calc
 
                 NumberInput.Text = result.ToString();
                 clearValues();
+                if (NumberInput.Text.Contains("NaN"))
+                    NumberInput.Text = "0";
             }
         }
 
